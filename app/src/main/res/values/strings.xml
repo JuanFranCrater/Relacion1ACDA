@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tema 1</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="txvDolar_txt">Dolar</string>
+    <string name="txvEuro_txt">Euro</string>
+    <string name="rdbEuro_txt">Euro a Dolar</string>
+    <string name="rdbDolar_txt">Dolar a Euro</string>
+    <string name="btnConventir_txt">Calcular</string>
+    <string name="txvEaD_txt">Euros el Dolar</string>
+</resources>
