@@ -10,7 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="257dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_weight="0.23">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -19,34 +20,56 @@
             app:srcCompat="@drawable/java" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btnmenos"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txvContador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="05:00"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/btnmas"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnDescanso"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="60dp"
         android:text="Iniciar" />
 
-    <Button
-        android:id="@+id/btnmas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:text="+" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/txvContador"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/txvCafes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Contador Cafe: "
+            android:textSize="30sp" />
+    </LinearLayout>
 
-        android:layout_weight="1"
-        android:text="05:00"
-        android:textSize="36sp" />
-
-    <Button
-        android:id="@+id/btnmenos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:text="-" />
 </LinearLayout>

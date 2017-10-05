@@ -14,18 +14,17 @@ public class WebViewShowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view_show);
         webview =(WebView)findViewById(R.id.webView);
-        webview.loadUrl("https://www.google.es");
-        /*
+
         try {
             Bundle bld = getIntent().getExtras();
             String stg = bld.getString("url");
-            webview.loadUrl("https://www.google.es");
+            webview.loadUrl("stg");
 
         }catch (Exception e)
         {
             Toast.makeText(this, "URL no valida o error de conexion",Toast.LENGTH_SHORT);
         }
-*/
+
     }
 }
 
