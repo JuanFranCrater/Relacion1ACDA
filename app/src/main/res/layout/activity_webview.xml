@@ -32,15 +32,7 @@
         tools:layout_editor_absoluteY="65dp" />
 
     <Button
-        android:id="@+id/btnBuscar"
-        android:layout_width="50dp"
-        android:layout_height="51dp"
-        android:text="IR"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="132dp" />
-
-    <Button
-        android:id="@+id/btnIr2"
+        android:id="@+id/btnIr"
         android:layout_width="54dp"
         android:layout_height="51dp"
         android:text="IR"

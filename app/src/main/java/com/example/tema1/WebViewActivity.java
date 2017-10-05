@@ -14,31 +14,20 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
 
     EditText edturl;
     Button btnIr;
-    Button btnIr2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
         edturl = (EditText) findViewById(R.id.edtBuscar);
-        btnIr = (Button) findViewById(R.id.btnBuscar);
+        btnIr = (Button) findViewById(R.id.btnIr);
         btnIr.setOnClickListener(this);
-        btnIr2 = (Button) findViewById(R.id.btnIr2);
-        btnIr2.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View view) {
         if(view == btnIr)
-        {
-            try {
-                openWebPage(edturl.getText().toString());
-            }catch (Exception e)
-            {
-                Toast.makeText(this, "Error",Toast.LENGTH_SHORT);
-            }
-        }
-        if(view ==btnIr2)
         {
             try {
                 openWebActivity(edturl.getText().toString());
@@ -53,15 +42,8 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         Bundle bld = new Bundle();
         bld.putString("url",url);
         Intent intent = new Intent(this,WebViewShowActivity.class);
-        intent.putExtra("url",bld);
+        intent.putExtras(bld);
         startActivity(intent);
-    }
-    public void openWebPage(String url) {
-        Uri webpage = Uri.parse(url);
-        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
-        }
     }
 
 }

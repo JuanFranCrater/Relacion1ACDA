@@ -40,11 +40,13 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
       }
       if(view == btnEj2)
       {
-
+          intnt = new Intent(this,WebViewActivity.class);
+          startActivity(intnt);
       }
       if(view == btnEj3)
       {
-
+          intnt = new Intent(this,ContadorCafesActivity.class);
+          startActivity(intnt);
       }
       if(view == btnEj4)
       {
