@@ -50,7 +50,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
       }
       if(view == btnEj4)
       {
-
+          intnt = new Intent(this, PomodoroActivity.class);
+          startActivity(intnt);
       }
 
 

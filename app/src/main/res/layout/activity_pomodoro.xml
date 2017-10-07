@@ -187,6 +187,14 @@
                 android:text="+" />
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btnInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:layout_weight="1"
+            android:text="Iniciar" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

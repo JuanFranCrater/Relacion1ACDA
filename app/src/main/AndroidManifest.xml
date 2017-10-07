@@ -22,7 +22,8 @@
         <activity android:name=".WebViewActivity" />
         <activity android:name=".WebViewShowActivity" />
         <activity android:name=".ContadorCafesActivity" />
-        <activity android:name=".PomodoroActivity"></activity>
+        <activity android:name=".PomodoroActivity" />
+        <activity android:name=".SesionIniciadaActivity"></activity>
     </application>
 
 </manifest>
